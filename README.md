@@ -1,1 +1,1 @@
-# Learning-CSS-
+# Folder to help practice CSS.
