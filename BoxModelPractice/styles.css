@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+}
+
+.box-one {
+  text-align: center;
+  background-color: blue;
+  padding: 15px;
+  border: 10px solid black;
+  margin: 10px;
+}
+
+.box-two {
+  text-align: center;
+  background-color: red;
+  padding: 15px;
+  border: 10px solid black;
+  margin: 10px;
+}
+
+.container {
+  background-color: green;
+  margin: 50px;
+  padding: 15px;
+  border: 15px solid purple;
+}
