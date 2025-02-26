@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="image-container">
+        <img
+          class="sports-logo"
+          id="mlb-logo"
+          src="images/mlb logo.png"
+          alt="mlb logo"
+        />
+        <img
+          class="sports-logo"
+          id="nba-logo"
+          src="images/nba logo.png"
+          alt="nba logo"
+        />
+        <img
+          class="sports-logo"
+          id="nfl-logo"
+          src="images/nfl logo.jpeg"
+          alt="nfl logo"
+        />
+        <img
+          class="sports-logo"
+          id="nhl-logo"
+          src="images/nhl logo.png"
+          alt="logo"
+        />
+      </div>
+      <h1>Sports Quiz</h1>
+      <nav>
+        <ul>
+          <li><a href="#info-section">INFO</a></li>
+          <li><a href="#mlb">MLB</a></li>
+          <li><a href="#nba">NBA</a></li>
+          <li><a href="#nfl">NFL</a></li>
+          <li><a href="#nhl">NHL</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form>
+        <section>
+          <h2 id="info-section">User Info</h2>
+          <div class="info">
+            <label for="name">Name:</label><input id="name" type="text" />
+          </div>
+          <div class="info">
+            <label for="email">Email:</label> <input id="email" type="email" />
+          </div>
+          <div class="info">
+            <label for="birth-date">Birth Date: </label
+            ><input id="birth-date" type="date" />
+          </div>
+        </section>
+        <section>
+          <h2 id="mlb">MLB</h2>
+          <div class="question-block">
+            <h3>Question #1</h3>
+            <fieldset>
+              <legend>Is Shohei Ohtani the best player in the MLB?</legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1"
+                    ><input
+                      id="q1-a1"
+                      type="radio"
+                      value="true"
+                      name="q1"
+                    />True</label
+                  >
+                </li>
+                <li>
+                  <label for="q1-a2"
+                    ><input
+                      id="q1-a2"
+                      type="radio"
+                      value="false"
+                      name="q1"
+                    />False</label
+                  >
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="question-block">
+            <h3>Question #2</h3>
+            <fieldset>
+              <legend>Was Babe Ruth in the MLB?</legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1"
+                    ><input
+                      id="q2-a1"
+                      type="radio"
+                      value="true"
+                      name="q1"
+                    />True</label
+                  >
+                </li>
+                <li>
+                  <label for="q2-a2"
+                    ><input
+                      id="q2-a2"
+                      type="radio"
+                      value="false"
+                      name="q1"
+                    />False</label
+                  >
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <section>
+          <h2 id="nba">NBA</h2>
+          <div class="answer-choice-checklist">
+            <fieldset>
+              <legend>Which of these teams are currently in the NBA?</legend>
+              <div class="checkbox-question">
+                <label for="mil"
+                  ><input
+                    type="checkbox"
+                    id="mil"
+                    name="checkbox-answer"
+                    value="milwaukee bucks"
+                  />Milwaukee Bucks</label
+                >
+              </div>
+              <div class="checkbox-question">
+                <label for="chi"
+                  ><input
+                    type="checkbox"
+                    id="chi"
+                    name="checkbox-answer"
+                    value="chicago bulls"
+                  />Chicago Bulls</label
+                >
+              </div>
+              <div class="checkbox-question">
+                <label for="sea"
+                  ><input
+                    type="checkbox"
+                    id="sea"
+                    name="checkbox-answer"
+                    value="seattle supersonics"
+                  />Seattle Supersonics</label
+                >
+              </div>
+              <div class="checkbox-question">
+                <label for="mia"
+                  ><input
+                    type="checkbox"
+                    id="mia"
+                    name="checkbox-answer"
+                    value="miami heat"
+                  />Miami Heat</label
+                >
+              </div>
+            </fieldset>
+          </div>
+        </section>
+        <section>
+          <h2 id="nfl">NFL</h2>
+          <fieldset>
+            <legend>How many SuperBowls have the Chiefs won since 2015?</legend>
+            <div class="dropdown-container">
+              <select class="dropdown" name="dropdown">
+                <option value="">Select an option</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+          </fieldset>
+        </section>
+        <section>
+          <h2 id="nhl">NHL</h2>
+          <div class="nhl-essay">
+            <label for="long-answer"
+              >Please describe how overtime in the NHL is run: </label
+            ><textarea
+              id="long-answer"
+              name="long-answer"
+              placeholder="Type here..."
+              rows="5"
+              cols="24"
+            ></textarea>
+          </div>
+        </section>
+        <button type="submit">Send</button>
+      </form>
+    </main>
+    <footer>
+      <address>
+        <a href="https://www.espn.com/">ESPN</a><br />
+        San Francisco<br />
+        California<br />
+        USA
+      </address>
+    </footer>
+  </body>
+</html>
