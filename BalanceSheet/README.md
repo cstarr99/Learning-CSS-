@@ -1,1 +1,1 @@
-# made balance sheet to learn pseudo selectors and tables.
+# made balance sheet to learn pseudo selectors and tables from freecodecamp.
