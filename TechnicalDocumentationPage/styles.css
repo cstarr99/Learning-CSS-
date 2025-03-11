@@ -12,22 +12,25 @@ nav > ul > li > a {
 nav > ul > li {
   list-style: none;
   padding: 10px 20px 15px 10px;
-  border-bottom: 2px solid black;
 }
 
 ul > li > a {
   text-decoration: none;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+ul > li > a:hover {
+  background-color: blue;
 }
 
 nav {
-  background-color: blue;
   height: 100%;
   width: 0%;
   position: fixed;
   top: 0;
   left: 0;
-  margin-left: 25px;
-  border-left: 1px solid black;
+  padding-left: 25px;
 }
 
 main {
@@ -36,4 +39,5 @@ main {
 
 section {
   padding-bottom: 15px;
+  border-bottom: 2px solid black;
 }
