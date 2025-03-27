@@ -1,0 +1,103 @@
+* {
+  font-family: "Courier New", Courier, monospace;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  background-color: blue;
+}
+
+#nav-bar {
+  padding-right: 18px;
+}
+
+#nav-bar > ul {
+  padding-right: 18px;
+  list-style: none;
+}
+
+#nav-bar > ul > li {
+  padding-bottom: 25px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#nav-bar > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+#nav-bar > ul > li > a:hover {
+  color: white;
+}
+
+form {
+  text-align: center;
+}
+
+#email {
+  display: block;
+  margin: auto auto;
+  margin-bottom: 14px;
+  padding: 8px;
+}
+
+button {
+  background-color: blue;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.34rem;
+}
+
+button:hover {
+  background-color: lightseagreen;
+}
+
+#features,
+#how-it-works {
+  text-align: center;
+}
+
+#how-it-works {
+  margin-top: 45px;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+
+.price-block {
+  border: 2px solid black;
+  width: 25%;
+  height: 400px;
+}
+
+.price-block > h3 {
+  background-color: lightgray;
+  margin-top: 0;
+  padding: 15px 0 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.price-block > h2 {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.price-submit {
+  margin: auto 110px;
+  margin-top: 45px;
+}
+
+footer {
+  text-align: center;
+  background-color: lightcyan;
+}
+
+footer > ul {
+  list-style: none;
+}
