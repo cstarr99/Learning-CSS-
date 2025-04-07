@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.thumbnail {
+  width: 350px;
+  height: 250px;
+}
+
+.thumbnail-link {
+  display: flex;
+  position: relative;
+}
+
+.thumbnail-link::before {
+  content: attr(data-duration);
+  position: absolute;
+  bottom: 50;
+  right: 5;
+  color: white;
+  background-color: black;
+  padding: 3px;
+  border-radius: 30%;
+}
+
+.profile-pic {
+  border-radius: 100%;
+  padding-top: 10px;
+}
+
+.videos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(250px, auto);
+  border-top: 5px solid #ccc;
+}
+
+.videos:first-child {
+  border: none;
+}
+
+.video-details {
+  display: flex;
+}
+
+.video-container {
+  margin-bottom: 75px;
+  margin-top: 75px;
+}
