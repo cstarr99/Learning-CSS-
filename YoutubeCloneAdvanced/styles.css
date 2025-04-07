@@ -3,6 +3,60 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
+.categories {
+  overflow: hidden;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 25px;
+}
+
+.category {
+  border-radius: 900px;
+  margin-right: 15px;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.category:hover {
+  background-color: darkgray;
+}
+
+.active {
+  background-color: darkgray;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-bar {
+  display: flex;
+  flex-grow: 1;
+  margin: 0 2rem 0 4rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.4em;
+  border: 1px solid #777;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.menu-icon,
+.search-img,
+.youtube-pic {
+  width: 36px;
+  height: 36px;
+}
+
+.menu-icon {
+  padding-right: 15px;
+}
+
 .thumbnail {
   width: 350px;
   height: 250px;
@@ -32,20 +86,69 @@
 .videos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  align-items: center;
   grid-auto-rows: minmax(250px, auto);
-  border-top: 5px solid #ccc;
+  border-bottom: 5px solid #ccc;
 }
 
-.videos:first-child {
+.videos:last-of-type {
   border: none;
 }
 
 .video-details {
   display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.video-bottom-section {
+  display: flex;
+  align-items: flex-start;
+}
+
+.video-title {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 6px;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.channel-name {
+  text-decoration: none;
+  color: gray;
+  padding-bottom: 6px;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.channel-name:hover {
+  color: black;
+}
+
+.metadata {
+  color: gray;
+  font-weight: bold;
 }
 
 .video-container {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 75px;
   margin-top: 75px;
+}
+
+.special-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1em;
+  font-size: 2rem;
+  font-weight: bold;
+  align-items: center;
+}
+
+.close-button {
+  border: none;
+  padding-right: 15px;
 }
