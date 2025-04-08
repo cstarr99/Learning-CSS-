@@ -1,19 +1,12 @@
-/*.sidebar {
+body {
   margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
 }
-*/
 
 .sidebar {
   position: fixed;
-  margin: 0;
+  margin-top: 0;
   padding: 0;
-  background-color: #f1f1f1;
+  background-color: orange;
   width: 200px;
   height: 100%;
   overflow: auto;
@@ -26,6 +19,12 @@
   padding: 16px;
 }
 
-.sidebar > a:hover {
+.sidebar a:hover {
   color: #ccc;
+}
+
+.content {
+  margin-left: 220px;
+  padding: 1px 16px;
+  height: 1000px;
 }
