@@ -58,7 +58,7 @@
 .post-section {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: green;
+  background-color: lightgreen;
   margin-left: 300px;
   margin-right: 300px;
   padding: 800px 0;
