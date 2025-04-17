@@ -2,11 +2,12 @@
   box-sizing: border-box;
   margin: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: whitesmoke;
 }
 
 /* Header */
 .header {
-  background-color: orange;
+  background-color: black;
   height: 90px;
 }
 
@@ -36,17 +37,78 @@
   position: fixed;
   width: 300px;
   height: 100%;
-  background-color: aqua;
+  background-color: black;
   margin-top: -90px;
+  border-right: 1px solid #ccc;
 }
 .instagram-logo {
   width: 100px;
   height: 60px;
+  color: white;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.left-sidebar-tabs {
+  display: flex;
+  align-items: space-between;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.left-sidebar-tabs > ul > li {
+  list-style: none;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-right: 250px;
+  border-radius: 4%;
+}
+
+.left-sidebar-tabs > ul > li > a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.left-tabs {
+  width: 60%;
+}
+
+.left-sidebar-icons {
+  margin-right: 20px;
+}
+
+.home-icon {
+  font-weight: bold;
+}
+
+.more-icon {
+  margin-top: 30px;
+}
+.icon-block > a {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-block {
+  width: 80%;
+}
+
+.icon-block:hover {
+  background-color: lightslategray;
+}
+
+.profile-pic-left-sidebar {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  padding-right: 3px;
+  padding-top: 10px;
 }
 
 /* Right Sidebar */
 .right-sidebar {
-  background-color: blue;
+  background-color: black;
   position: fixed;
   width: 300px;
   height: 100%;
@@ -54,19 +116,171 @@
   right: 0;
 }
 
+.suggested {
+  margin-top: 80px;
+}
+
+.right-sidebar-metadata {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 45px;
+}
+
+.see-all {
+  color: white;
+  text-decoration: none;
+}
+
+.see-all:hover {
+  filter: brightness(75%);
+}
+
+.suggested-accounts {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.suggested-accounts-block {
+  margin-bottom: 15px;
+}
+
+.suggested-accounts-profile-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  padding-right: 5px;
+}
+
+.suggested-link,
+.follow {
+  text-decoration: none;
+}
+
+.follow {
+  color: lightskyblue;
+  margin-left: 112px;
+}
+
+.follow:hover {
+  color: white;
+}
+
+footer {
+  font-style: italic;
+}
+
 /* Main Section */
 .post-section {
-  display: grid;
-  grid-template-columns: 1fr;
-  background-color: lightgreen;
+  background-color: black;
   margin-left: 300px;
   margin-right: 300px;
+  margin-top: -830px;
+  margin-bottom: -830px;
   padding: 800px 0;
   height: 100%;
 }
 
 .post-container {
-  border: 1px solid black;
+  border-bottom: 1px solid #ccc;
   margin-right: 25%;
   margin-left: 25%;
+  padding-top: 50px;
+}
+
+.video-top {
+  margin-bottom: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-pic-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  border: 1px solid red;
+  padding-right: 3px;
+  padding-top: 10px;
+}
+
+.account-name {
+  text-decoration: none;
+  color: whitesmoke;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-weight: bold;
+}
+
+.account-name:hover {
+  color: #ccc;
+}
+
+.post-date {
+  padding-left: 4px;
+}
+
+.thumbnail-img {
+  border-radius: 1%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  width: 100%;
+}
+
+.post-icons {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.post-menu-icons {
+  padding-right: 6px;
+}
+
+.post-menu-icons:hover {
+  filter: brightness(75%);
+}
+
+.likes {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.post-account-name {
+  font-weight: bold;
+  text-decoration: none;
+  display: inline;
+}
+
+.caption {
+  display: inline;
+}
+
+.caption-section {
+  padding-bottom: 10px;
+}
+
+.comment-number {
+  padding-bottom: 10px;
+}
+
+.comment-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.comments {
+  background-color: black;
+  border: none;
+  width: 100%;
+  font-size: 1.05rem;
+}
+
+.smiley {
+  width: 20px;
+  height: 20px;
+  padding-top: 5px;
 }
