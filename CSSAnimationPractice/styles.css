@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+}
+
+.logo {
+  width: 300px;
+  height: 250px;
+  border-radius: 100%;
+  background-color: aqua;
+  margin: auto;
+  margin-top: 200px;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateX(0);
+  }
+
+  33% {
+    transform: translateY(100%);
+    background-color: lawngreen;
+    border-radius: 75%;
+    transform: scale(2);
+  }
+
+  66% {
+    transform: translateX(100%) translateY(100%);
+    background-color: orange;
+    border-radius: 50%;
+  }
+
+  100% {
+    transform: translateX(100%);
+    background-color: blueviolet;
+    border-radius: 25%;
+  }
+}
+
+.logo:hover {
+  animation-name: spin;
+  animation-timing-function: ease;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  animation-direction: alternate;
+}
+
+.text {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-top: 100px;
+}
