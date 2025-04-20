@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #474;
+  font-family: Roboto;
+}
+
+.header {
+  background-color: lightgray;
+  width: 100%;
+  height: 15vh;
+  margin-top: -22px;
+}
+
+.title {
+  text-align: center;
+  padding-top: 23px;
+  font-size: 2rem;
+}
