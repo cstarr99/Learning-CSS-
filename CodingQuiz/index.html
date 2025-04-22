@@ -16,8 +16,100 @@
     <header class="header">
       <h1 class="title">Coding Quiz</h1>
       <nav class="nav-bar">
-        <ul class="nav-list"></ul>
+        <ul class="nav-list">
+          <li><a href="#user-info">User Info</a></li>
+          <li><a href="#html-question">HTML</a></li>
+          <li><a href="#css-question">CSS</a></li>
+          <li><a href="#javascript-question">JavaScript</a></li>
+        </ul>
       </nav>
     </header>
+    <main>
+      <form>
+        <section class="user-info">
+          <h1 class="section-title">User Info</h1>
+          <fieldset>
+            <label for="name"
+              >Name: <input id="name" type="text" name="name"
+            /></label>
+            <label for="email"
+              >Email: <input id="name" type="email" name="email"
+            /></label>
+            <label for="dob"
+              >Date Of Birth: <input id="dob" type="date" name="dob"
+            /></label>
+          </fieldset>
+        </section>
+        <section>
+          <h1 class="section-title">HTML</h1>
+          <fieldset class="html-question">
+            <div class="question-block">
+              <legend>HTML is used to style webpages.</legend>
+              <label>
+                <input
+                  name="answer-choice"
+                  value="true"
+                  id="true"
+                  type="radio"
+                />True</label
+              >
+              <label>
+                <input
+                  name="answer-choice"
+                  value="false"
+                  id="false"
+                  type="radio"
+                />False</label
+              >
+            </div>
+          </fieldset>
+        </section>
+        <section class="css-question">
+          <h1 class="section-title">CSS</h1>
+          <fieldset>
+            <legend>Which of the following are CSS elements?</legend>
+            <label for="div"
+              ><input
+                id="div"
+                type="checkbox"
+                name="checkbox-answer"
+                value="div"
+              />Div</label
+            >
+            <label for="height"
+              ><input
+                id="height"
+                type="checkbox"
+                name="checkbox-answer"
+                value="height"
+              />Height</label
+            >
+            <label for="article"
+              ><input
+                id="article"
+                type="checkbox"
+                name="checkbox-answer"
+                value="article"
+              />Article</label
+            >
+            <label for="margin"
+              ><input
+                id="margin"
+                type="checkbox"
+                name="checkbox-answer"
+                value="margin"
+              />Margin</label
+            >
+          </fieldset>
+        </section>
+        <section class="javascript-question">
+          <h1 class="section-title">JavaScript</h1>
+          <fieldset>
+            <legend>Which of the following is a concept in JavaScript?</legend>
+          </fieldset>
+        </section>
+        <button type="submit" class="submit">Send</button>
+      </form>
+    </main>
   </body>
 </html>
