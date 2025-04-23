@@ -33,7 +33,7 @@
               >Name: <input id="name" type="text" name="name"
             /></label>
             <label for="email"
-              >Email: <input id="name" type="email" name="email"
+              >Email: <input id="email" type="email" name="email"
             /></label>
             <label for="dob"
               >Date Of Birth: <input id="dob" type="date" name="dob"
@@ -68,44 +68,75 @@
           <h1 class="section-title">CSS</h1>
           <fieldset>
             <legend>Which of the following are CSS elements?</legend>
-            <label for="div"
-              ><input
-                id="div"
-                type="checkbox"
-                name="checkbox-answer"
-                value="div"
-              />Div</label
-            >
-            <label for="height"
-              ><input
-                id="height"
-                type="checkbox"
-                name="checkbox-answer"
-                value="height"
-              />Height</label
-            >
-            <label for="article"
-              ><input
-                id="article"
-                type="checkbox"
-                name="checkbox-answer"
-                value="article"
-              />Article</label
-            >
-            <label for="margin"
-              ><input
-                id="margin"
-                type="checkbox"
-                name="checkbox-answer"
-                value="margin"
-              />Margin</label
-            >
+            <div class="checkbox-answer-box">
+              <label for="div"
+                ><input
+                  id="div"
+                  type="checkbox"
+                  name="checkbox-answer"
+                  value="div"
+                />Div</label
+              >
+            </div>
+            <div class="checkbox-answer-box">
+              <label for="height"
+                ><input
+                  id="height"
+                  type="checkbox"
+                  name="checkbox-answer"
+                  value="height"
+                />Height</label
+              >
+            </div>
+            <div class="checkbox-answer-box">
+              <label for="article"
+                ><input
+                  id="article"
+                  type="checkbox"
+                  name="checkbox-answer"
+                  value="article"
+                />Article</label
+              >
+            </div>
+            <div class="checkbox-answer-box">
+              <label for="margin"
+                ><input
+                  id="margin"
+                  type="checkbox"
+                  name="checkbox-answer"
+                  value="margin"
+                />Margin</label
+              >
+            </div>
           </fieldset>
         </section>
         <section class="javascript-question">
           <h1 class="section-title">JavaScript</h1>
           <fieldset>
             <legend>Which of the following is a concept in JavaScript?</legend>
+          </fieldset>
+          <div class="dropdown-container">
+            <select class="dropdown">
+              <option value="">Select an option</option>
+              <option value="event-listeners">Event Listeners</option>
+              <option value="footer">Footer</option>
+              <option value="animation">Animation</option>
+            </select>
+          </div>
+        </section>
+        <section class="responsive-design">
+          <h1 class="section-title">Responsive Design</h1>
+          <fieldset>
+            <legend>Please explain how to make a website responsive:</legend>
+            <label for="text-question">
+              <textarea
+                id="text-question"
+                name="text-question"
+                placeholder="Please type answer here..."
+                rows="5"
+                cols="24"
+              ></textarea>
+            </label>
           </fieldset>
         </section>
         <button type="submit" class="submit">Send</button>

@@ -6,6 +6,28 @@ body {
   margin: 0;
   background-color: #474;
   font-family: Roboto;
+  font-size: 1.1rem;
+}
+
+main {
+  margin: 10px 150px;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  display: block;
+}
+
+legend {
+  font-weight: bold;
+}
+
+.section-title {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #ccc;
 }
 
 .header {
@@ -44,4 +66,45 @@ body {
 
 .nav-bar > ul > li > a:hover {
   color: #474;
+}
+
+section {
+  padding: 10px 100px 25px 100px;
+  width: 80%;
+  margin: 0 auto 10px auto;
+  max-width: 1000px;
+}
+
+#name,
+#email {
+  margin-bottom: 8px;
+}
+
+#true {
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.checkbox-answer-box {
+  margin-top: 8px;
+}
+
+.dropdown {
+  margin-left: 15px;
+}
+
+textarea {
+  margin-top: 10px;
+}
+
+.submit {
+  font-size: 1.3rem;
+  border: 1px solid black;
+  padding: 10px 20px;
+  margin-left: 475px;
+  margin-bottom: 20px;
+}
+
+.submit:hover {
+  filter: brightness(75%);
 }
