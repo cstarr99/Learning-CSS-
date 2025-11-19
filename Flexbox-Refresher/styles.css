@@ -1,0 +1,46 @@
+.flexbox-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: black;
+}
+
+.flexbox-item {
+  height: 70%;
+  width: 20%;
+}
+
+.flexbox-1 {
+  background-color: aqua;
+  height: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flexbox-2 {
+  background-color: red;
+}
+
+.flexbox-3 {
+  background-color: yellow;
+}
+
+.nested-flexbox-1 {
+  height: 50%;
+  width: 100%;
+  background-color: rgb(97, 44, 86);
+}
+
+.nested-flexbox-2 {
+  height: 30%;
+  width: 100%;
+  background-color: blue;
+}
+
+.nested-flexbox-3 {
+  height: 10%;
+  width: 100%;
+  background-color: blueviolet;
+}
